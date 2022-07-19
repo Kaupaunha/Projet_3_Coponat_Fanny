@@ -2,3 +2,9 @@
 @import "./Utils/variables";
 @import "./Utils/functions";
 @import "./Utils/mixins";
+@import "./Base/base";
+@import "./Layout/header";
+@import "./Layout/main-content";
+@import "./Layout/about";
+@import "./Layout/footer";
+@import './Components/loading-spinner';

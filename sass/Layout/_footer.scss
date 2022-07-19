@@ -1,0 +1,21 @@
+footer {
+    background-color: rgb(71, 71, 71);
+    color: #fff;
+    padding: 30px;
+    font-size: 14px;
+    line-height: 25px;
+
+    img {
+        filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(104deg) brightness(101%) contrast(102%);
+        width: 35%;
+        margin-bottom: 10px;
+    }
+
+    a {
+        display: block;
+    }
+
+    i{
+        margin-right: 10px;
+    }
+}
