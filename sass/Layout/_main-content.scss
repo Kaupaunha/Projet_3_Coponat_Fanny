@@ -7,7 +7,7 @@
             background-color: #fff;
             border-radius: 15px;
             margin: 20px 0;
-            box-shadow: 0 2px 7px #cccccc;
+            @include tile-shadow;
             position: relative;
 
             img {
@@ -29,6 +29,12 @@
                 font-weight: 500;
             }
 
+            .fa-heart {
+                position: absolute;
+                right: 20px;
+                bottom: 35px;
+            }
+
             &_info {
                 display: flex;
                 justify-content: space-between;
@@ -41,12 +47,7 @@
 
                 h3 {
                     line-height: 30px;
-                }
-
-                .fa-heart {
-                    font-size: 20px;
-                    padding-top: 5px;
-                }
+                }  
             }
         }
     }

@@ -1,0 +1,18 @@
+@mixin btn {
+    display: inline-block;
+    background: linear-gradient($secondary-color, $primary-color);
+    border-radius: 30px;
+    padding: 15px 25px;
+    margin: 20px 0;
+    color: #ffff;
+    box-shadow: 0 4px 7px #b4b3b3;
+}
+
+@mixin btn-lighten {
+    background: lighten($secondary-color, 1%);
+    box-shadow: 0 4px 7px darken(#b4b3b3, 10%);
+}
+
+@mixin tile-shadow{
+    box-shadow: 0 2px 7px #cccccc;
+}

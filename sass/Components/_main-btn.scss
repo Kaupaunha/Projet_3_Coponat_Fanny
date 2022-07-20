@@ -1,0 +1,12 @@
+.btn-container{
+    width: 100%;
+    text-align: center;
+}
+
+.btn {
+    @include btn;
+
+    &:hover {
+        @include btn-lighten;
+    }
+}

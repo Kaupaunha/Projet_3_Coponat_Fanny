@@ -1,16 +1,15 @@
 header {
-    margin-top: 20px;
     text-align: center;
 
     img {
         width: 50%;
+        margin: 20px 0 10px 0;
     }
 }
 
 .header_search {
     background-color: #eaeaea;
     padding: 15px;
-    margin-top: 10px;
     box-shadow: 0 2px 3px #bdbdbd inset;
 
     .fa-location-dot {
@@ -50,20 +49,5 @@ header {
     h2 {
         color: #646262;
         margin: 15px 0;
-    }
-
-    .btn {
-        display: inline-block;
-        background: linear-gradient($secondary-color, $primary-color);
-        border-radius: 30px;
-        padding: 15px 25px;
-        margin: 20px 0;
-        color: #ffff;
-        box-shadow: 0 4px 7px #b4b3b3;
-
-        &:hover {
-            background: lighten($secondary-color, 2%);
-            box-shadow: 0 4px 7px darken(#b4b3b3, 10%);
-        }
     }
 }
