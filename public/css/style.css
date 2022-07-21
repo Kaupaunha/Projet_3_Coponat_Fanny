@@ -286,6 +286,7 @@ footer i {
   font-size: 16px;
   position: relative;
   margin: 25px 0 20px 0;
+  animation: menu-appear 2s;
 }
 .menu_content h1::before {
   content: "";
@@ -312,6 +313,18 @@ footer i {
   cursor: pointer;
   margin: 15px 0;
   box-shadow: 0 2px 7px #cccccc;
+}
+.menu_content_tile:nth-child(2) {
+  animation: menu-appear 2s 200ms;
+}
+.menu_content_tile:nth-child(3) {
+  animation: menu-appear 2s 300ms;
+}
+.menu_content_tile:nth-child(4) {
+  animation: menu-appear 2s 400ms;
+}
+.menu_content_tile:nth-child(5) {
+  animation: menu-appear 2s 500ms;
 }
 .menu_content_tile:hover .checkbox {
   animation: check-hide 1s forwards;
@@ -372,6 +385,16 @@ footer i {
   }
   100% {
     transform: rotate(0deg);
+  }
+}
+@keyframes menu-appear {
+  0% {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
   }
 }
 .btn-container {
