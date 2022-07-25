@@ -2,7 +2,7 @@ header {
     text-align: center;
 
     img {
-        width: 50%;
+        width: 150px;
         margin: 20px 0 10px 0;
     }
 }
@@ -11,18 +11,24 @@ header {
     background-color: #eaeaea;
     padding: 15px;
     box-shadow: 0 2px 3px #bdbdbd inset;
+    width: 100%;
 
     .fa-location-dot {
         color: #383838;
     }
 
+    form{
+        display: flex;
+        justify-content: center;
+    }
+
     input {
         border: none;
-        width: 50%;
-        padding-left: 10px;
+        width: 120px;
         background-color: #eaeaea;
         font-weight: 700;
         outline: none;
+        margin-left: 10px;
 
         &::placeholder {
             color: #383838;

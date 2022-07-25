@@ -23,149 +23,136 @@
         }
     }
 
-    &_content {
-        h1 {
-            text-transform: uppercase;
-            font-weight: 300;
-            font-size: 16px;
-            position: relative;
-            margin: 25px 0 20px 0;
-            animation: menu-appear 2s;
+    .menu_container{
 
-
-            &::before {
-                content: '';
-                position: absolute;
-                bottom: -5px;
-                width: 40px;
-                height: 3px;
-                background-color: $tertiary-color;
+        .menu_content {
+            h1 {
+                text-transform: uppercase;
+                font-weight: 300;
+                font-size: 16px;
+                position: relative;
+                margin: 25px 0 20px 0;
+    
+    
+                &::before {
+                    content: '';
+                    position: absolute;
+                    bottom: -5px;
+                    width: 40px;
+                    height: 3px;
+                    background-color: $tertiary-color;
+                }
             }
-        }
-
-        h2 {
-            font-weight: 700;
-
-        }
-
-        h3 {
-            font-size: 14px;
-
-        }
-
-
-
-
-        &_tile {
-            position: relative;
-            display: flex;
-            justify-content: space-between;
-            align-items: flex-end;
-            background-color: white;
-            border-radius: 15px;
-            padding: 10px 15px 10px 10px;
-            cursor: pointer;
-            margin: 15px 0;
-            @include tile-shadow;
-
-            &:nth-child(2) {
-                animation: menu-appear 2s 200ms;
-            }
-
-            &:nth-child(3) {
-                animation: menu-appear 2s 300ms;
-            }
-
-            &:nth-child(4) {
-                animation: menu-appear 2s 400ms;
-            }
-
-            &:nth-child(5) {
-                animation: menu-appear 2s 500ms;
-            }
-
-
-            &:hover .checkbox {
-                animation: check-hide 1s forwards;
-            }
-
-            &:hover .fa-circle-check {
-                animation: icon-hide 1s forwards;
-                // icon-rotate 10s forwards;
-            }
-
-            .checkbox {
-                display: flex;
-                align-items: center;
-                height: 100%;
-                width: 45px;
-                background-color: $tertiary-color;
-                position: absolute;
-                top: 0;
-                right: -1px;
-                border-radius: 0 15px 15px 0;
-                padding: 0 15px;
-                transform: scaleX(0);
-                transform-origin: 100% 50%;
-            }
-
-            .fa-circle-check {
-                position: absolute;
-                color: black;
-                top: 22px;
-                right: 13px;
-                transform: translate(29px);
-                opacity: 0;
-            }
-
-            > :nth-child(2) {
+    
+            h2 {
                 font-weight: 700;
+    
+            }
+    
+            h3 {
                 font-size: 14px;
+    
+            }
+    
+            &_tile {
+                display: flex;
+                justify-content: space-between;
+                align-items: flex-end;
+                background-color: white;
+                border-radius: 15px;
+                cursor: pointer;
+                margin: 15px 0;
+                @include tile-shadow;
+                overflow: hidden;
+                height: 70px;
+    
+                &>div:first-child {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-around;
+                    padding: 10px;
+                    height: 100%;
+                    width: 100%;
+                    overflow: hidden;
+    
+                    h2 {
+                        overflow: hidden;
+                        white-space: nowrap;
+                        text-overflow: ellipsis;
+                    }
+                    h3 {
+                        overflow: hidden;
+                        white-space: nowrap;
+                        text-overflow: ellipsis;
+                    }                
+                }
+    
+    
+    
+                //LOADING ANIMATION TILES
+                &:nth-child(2) {
+                    animation: menu-appear 2s 200ms;
+                }
+    
+                &:nth-child(3) {
+                    animation: menu-appear 2s 300ms;
+                }
+    
+                &:nth-child(4) {
+                    animation: menu-appear 2s 400ms;
+                }
+    
+                &:nth-child(5) {
+                    animation: menu-appear 2s 500ms;
+                }
+    
+    
+    
+                //CHECKBOX  
+                .check-container {
+                    height: 100%;
+                    display: flex;
+                    align-items: flex-end;
+                    transform: translate(55px);
+                    transition: 1s;
+    
+                    &>div:first-child {
+                        margin: 0 20px 10px 0;
+                        font-weight: 700;
+                    }
+                }
+    
+                .checkbox {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    height: 100%;
+                    min-width: 55px;
+                    background-color: $tertiary-color;
+                    padding: 0 15px;
+    
+                    .fa-circle-check {
+                        color: white;
+                        font-size: 20px;
+                        transform: rotate(-360deg);
+                        transition: 1s;
+                    }
+                }
+    
+                &:hover .check-container {
+                    transform: translateX(0);
+                }
+    
+                &:hover .fa-circle-check {
+                    transform: rotate(0deg);
+                }
             }
         }
-
-
-
-
     }
+
 
 }
 
-
-@keyframes check-hide {
-    0% {
-        transform: scaleX(0);
-    }
-
-    100% {
-        transform: scaleX(1);
-    }
-}
-
-@keyframes icon-hide {
-    0% {
-        transform: translateX(29px);
-        opacity: 0;
-    }
-
-    50% {
-        opacity: 1;
-    }
-
-    100% {
-        transform: translate(0px);
-    }
-}
-
-@keyframes icon-rotate {
-    0% {
-        transform: rotate(-360deg);
-    }
-
-    100% {
-        transform: rotate(0deg);
-    }
-}
 
 @keyframes menu-appear {
     0% {
