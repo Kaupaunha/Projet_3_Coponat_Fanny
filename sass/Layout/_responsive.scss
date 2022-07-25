@@ -14,8 +14,15 @@
             margin: 0 25px;
 
             &_search {
-                width: 30%;
+                width: 20%;
                 border-radius: 10px;
+                background-color: white;
+                box-shadow: none;
+                border: solid 1px $primary-color;
+
+                input {
+                    background-color: white;
+                }
             }
 
             &_presentation {
@@ -51,10 +58,10 @@
 
     //MENUS MEDIA QUERIES
 
-    .header-menu{
+    .header-menu {
         position: relative;
-    
-        .fa-arrow-left{
+
+        .fa-arrow-left {
             position: absolute;
             top: 40px;
             left: 20px;
@@ -96,9 +103,9 @@
     }
 }
 
-@media (min-width: 1440px){
-        body {
-            max-width: 1440px;
-            margin: auto;
-        }
+@media (min-width: 1440px) {
+    body {
+        max-width: 1440px;
+        margin: auto;
+    }
 }

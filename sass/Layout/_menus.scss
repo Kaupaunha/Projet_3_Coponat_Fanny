@@ -20,13 +20,14 @@
         h1 {
             font-family: $ff-titles;
             font-weight: 500;
+            font-size: 22px;
         }
     }
 
     .menu_container{
 
         .menu_content {
-            h1 {
+            h2 {
                 text-transform: uppercase;
                 font-weight: 300;
                 font-size: 16px;
@@ -44,12 +45,12 @@
                 }
             }
     
-            h2 {
+            h3 {
                 font-weight: 700;
     
             }
     
-            h3 {
+            h4 {
                 font-size: 14px;
     
             }
@@ -75,12 +76,12 @@
                     width: 100%;
                     overflow: hidden;
     
-                    h2 {
+                    h3 {
                         overflow: hidden;
                         white-space: nowrap;
                         text-overflow: ellipsis;
                     }
-                    h3 {
+                    h4 {
                         overflow: hidden;
                         white-space: nowrap;
                         text-overflow: ellipsis;
@@ -95,15 +96,15 @@
                 }
     
                 &:nth-child(3) {
-                    animation: menu-appear 2s 300ms;
-                }
-    
-                &:nth-child(4) {
                     animation: menu-appear 2s 400ms;
                 }
     
+                &:nth-child(4) {
+                    animation: menu-appear 2s 600ms;
+                }
+    
                 &:nth-child(5) {
-                    animation: menu-appear 2s 500ms;
+                    animation: menu-appear 2s 800ms;
                 }
     
     
@@ -114,7 +115,7 @@
                     display: flex;
                     align-items: flex-end;
                     transform: translate(55px);
-                    transition: 1s;
+                    transition: 800ms;
     
                     &>div:first-child {
                         margin: 0 20px 10px 0;

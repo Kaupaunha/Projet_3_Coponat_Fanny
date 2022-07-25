@@ -46,7 +46,7 @@ header {
     background-color: #f6f6f6;
     padding: 40px 20px;
 
-    h1 {
+    h1{
         font-size: 25px;
         font-weight: 800;
         line-height: 30px;
@@ -55,5 +55,8 @@ header {
     h2 {
         color: #646262;
         margin: 15px 0;
+        font-family: $ff-main;
+        font-weight: 400;
+        font-size: 16px;
     }
 }

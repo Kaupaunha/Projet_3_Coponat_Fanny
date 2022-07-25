@@ -2,6 +2,8 @@
     background-color: $background-color;
     padding: 40px 20px;
 
+
+
     &_tile {
         &_content {
             background-color: #fff;
@@ -41,13 +43,13 @@
                 align-items: flex-start;
                 padding: 10px 20px 10px 10px;
 
-                h2 {
+                h3 {
                     font-weight: 800;
                 }
 
-                h3 {
+                h4 {
                     line-height: 30px;
-                }  
+                }
             }
         }
     }
