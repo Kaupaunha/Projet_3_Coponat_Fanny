@@ -419,7 +419,7 @@ footer i {
   box-shadow: 0 4px 7px #9b9999;
 }
 
-@media (min-width: 769px) {
+@media (min-width: 970px) {
   header img {
     width: 250px;
     margin: 30px 0;
