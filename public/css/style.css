@@ -143,6 +143,9 @@ header img {
   border-radius: 20px;
   box-shadow: 0 2px 10px #c3c3c3;
 }
+.about_tile_content > :first-child:hover {
+  background-color: #f1f1f1;
+}
 .about_tile_content > :first-child:hover .fa-solid {
   color: #9356DC;
 }

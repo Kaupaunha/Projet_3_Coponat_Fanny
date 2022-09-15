@@ -29,6 +29,10 @@
                 border-radius: 20px;
                 box-shadow: 0 2px 10px darken($background-color, 20%);
 
+                &:hover{
+                    background-color: darken($background-color, 2%);
+                }
+
                 &:hover .fa-solid {
                     color: $primary-color;
                 }
